@@ -1,0 +1,29 @@
+### Index
+ GET http://localhost:3000/songs.json
+
+### Create
+POST http://localhost:3000/songs.json
+Content-Type: application/json
+
+{
+  "title": "test_title",
+  "album": "test_album",
+  "artist": "test_artist",
+  "year": "test_year"
+}
+
+
+### Show
+GET http://localhost:3000/songs/2.json
+
+### Update
+PATCH http://localhost:3000/songs/4.json
+Content-Type: application/json
+
+{
+  "title": "We Care A Lot"
+}
+
+### Destroy
+DELETE http://localhost:3000/songs/4.json
+
